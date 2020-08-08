@@ -1,0 +1,50 @@
+#https://www.hackerrank.com/challenges/string-validators/problem
+if __name__ == '__main__':
+    s = raw_input()
+    for i in s:
+        if i.isalnum():
+            answer = True
+            break
+        else:
+            answer = False
+            continue
+    print (answer)
+
+
+    for i in s:
+        if i.isalpha():
+            answer = True
+            break
+        else:
+            answer = False
+            continue
+    print (answer)
+ 
+    for i in s:
+        if i.isdigit():
+            answer = True
+            break
+        else:
+            answer = False
+            continue
+    print (answer)
+
+    for i in s:
+        if i.islower():
+            answer = True
+            break
+        else:
+            answer = False
+            continue
+    print (answer)
+    
+    for i in s:       
+        if i.isupper():
+            answer = True
+            break
+        else:
+            answer = False
+            continue
+    print (answer)
+    
+    
