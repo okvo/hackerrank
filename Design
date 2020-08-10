@@ -1,0 +1,19 @@
+# Enter your code here. Read input from STDIN. Print output to STDOUT
+#https://www.hackerrank.com/challenges/designer-door-mat/problem
+inp = raw_input()
+lines = int(inp.split(' ')[0])
+dots = int(inp.split(' ')[-1])
+
+
+for i in range(1, lines, 2):
+    print (('.|.')*i).center(dots,'-')
+print 'WELCOME'.center(dots,'-')
+
+for i in range(lines-2, 0, -2):
+    print (('.|.')*i).center(dots,'-')
+
+
+    
+
+
+
